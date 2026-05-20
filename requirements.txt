@@ -1,0 +1,20 @@
+# ButtonBridge — Python dependencies (macOS only)
+#
+# Use a venv (see scripts/run.sh). PyObjC needs a Python version with wheels on PyPI
+# — typically 3.10–3.13. If install fails with "No matching distribution", use
+#   brew install python@3.12
+#   /opt/homebrew/bin/python3.12 -m venv .venv   # Apple Silicon
+#
+# Install:
+#   python3 -m venv .venv && source .venv/bin/activate
+#   python3 -m pip install -U pip
+#   python3 -m pip install -r requirements.txt
+
+rumps>=0.4.0
+pygame>=2.5.0
+
+# macOS frameworks (NSWorkspace, CGEvent, Accessibility APIs)
+pyobjc-framework-Cocoa>=9.0
+pyobjc-framework-Quartz>=9.0
+pyobjc-framework-ApplicationServices>=9.0
+pyobjc-framework-GameController>=9.0

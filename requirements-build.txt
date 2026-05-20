@@ -1,0 +1,2 @@
+# One-off: build ButtonBridge.app (PyInstaller). Use the same Python as .venv (3.10–3.13).
+pyinstaller>=6.6.0
